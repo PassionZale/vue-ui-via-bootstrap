@@ -4,6 +4,8 @@
   "description": "A UI components Library with Vue.js & Bootstrap",
   "main": "index.js",
   "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
