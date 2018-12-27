@@ -1,0 +1,28 @@
+{
+  "name": "vue-ui-via-bootstrap",
+  "version": "1.0.0",
+  "description": "A UI components Library with Vue.js & Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PassionZale/vue-ui-via-bootstrap.git"
+  },
+  "keywords": [
+    "vue",
+    "vue.js",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "bootstrap"
+  ],
+  "author": "Lei Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PassionZale/vue-ui-via-bootstrap/issues"
+  },
+  "homepage": "https://github.com/PassionZale/vue-ui-via-bootstrap#readme"
+}
