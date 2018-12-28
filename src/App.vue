@@ -24,6 +24,9 @@
           <Button>按钮</Button>
         </ButtonGroup>
       </ButtonToolBar>
+      <hr>
+
+      <Label type="warning">1</Label>
   </div>
 </template>
 
