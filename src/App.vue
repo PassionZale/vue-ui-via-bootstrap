@@ -6,6 +6,7 @@
       <Button>按钮</Button>
       <Button type="primary">按钮</Button>
       <Button type="success">按钮</Button>
+      <Button icon="star">按钮(带ICON)</Button>
       <hr>
   </div>
 </template>
