@@ -1,9 +1,11 @@
 import Icon from "./components/icon"
-import Button from "./components/button"
+import * as Btns from "./components/button"
 
 const install = (Vue) => {
   Vue.component("Icon", Icon)
-  Vue.component("Button", Button)
+  Object.keys(Btns).forEach(key => {
+    Vue.component(key, Btns[key])    
+  })
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -13,5 +15,5 @@ if(typeof window != "undefined" && window.Vue) {
 export default {
   install,
   Icon,
-  Button
+  Btns
 }

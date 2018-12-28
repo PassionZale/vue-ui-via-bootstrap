@@ -13,10 +13,8 @@
 import { looseIndexOf } from "../../utils/assist"
 import Icon from "../icon"
 
-// 按钮预定义样式
 const btnTypes = ["default", "primary", "success", "info", "warning", "danger", "link"]
 
-// 按钮尺寸
 const btnSizes = ["xs", "sm", "lg"]
 
 export default {
