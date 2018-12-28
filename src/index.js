@@ -1,6 +1,7 @@
 import Icon from "./components/icon"
 import * as Btns from "./components/button"
 import Label from "./components/label"
+import Badge from "./components/badge"
 
 const install = (Vue) => {
   Vue.component("Icon", Icon)
@@ -8,6 +9,7 @@ const install = (Vue) => {
     Vue.component(key, Btns[key])    
   })
   Vue.component("Label", Label)
+  Vue.component("Badge", Badge)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -18,5 +20,6 @@ export default {
   install,
   Icon,
   Btns,
-  Label
+  Label,
+  Badge
 }

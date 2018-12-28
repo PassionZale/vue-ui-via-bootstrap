@@ -7,7 +7,7 @@
       <Button>按钮</Button>
       <Button type="primary">按钮</Button>
       <Button type="success">按钮</Button>
-      <Button icon="star">按钮(带ICON)</Button>
+      <Button icon="star">按钮</Button>
       <hr>
 
       <ButtonToolBar>
@@ -26,7 +26,13 @@
       </ButtonToolBar>
       <hr>
 
-      <Label type="warning">1</Label>
+      <Label>1</Label>
+      <Label type="warning">2</Label>
+      <hr>
+
+      <Badge></Badge>
+      <Badge>2</Badge>
+      <Badge>3</Badge>
   </div>
 </template>
 

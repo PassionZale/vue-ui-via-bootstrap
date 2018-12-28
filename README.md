@@ -4,16 +4,16 @@
 
 # Covered
 
-- icon
+- icon 图标
 
-- button
+- button 按钮
 
-- button-group
+- button-group 按钮组
 
-- button-tool-bar
+- button-tool-bar 按钮工具组
 
-- label
+- label 标签
 
 # TODOS
 
-- badge
+- badge 徽章
