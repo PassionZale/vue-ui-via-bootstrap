@@ -1,9 +1,12 @@
 <template>
   <div>
-    <p style="font-size: 20px;">
-      aaa 
-      <Icon name="plus"></Icon>
-    </p>
+      <Icon name="plus" size="20"></Icon>
+      <Icon name="star" size="20"></Icon>
+      <hr>
+      <Button>按钮</Button>
+      <Button type="primary">按钮</Button>
+      <Button type="success">按钮</Button>
+      <hr>
   </div>
 </template>
 
@@ -12,4 +15,3 @@ export default {
   name: "App",
 }
 </script>
-
