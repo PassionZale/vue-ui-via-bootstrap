@@ -3,6 +3,7 @@ import * as Btns from "./components/button"
 import Label from "./components/label"
 import Badge from "./components/badge"
 import Alert from "./components/alert"
+import BreadCrumb from "./components/breadcrumb"
 
 const install = (Vue) => {
   Vue.component("Icon", Icon)
@@ -12,6 +13,7 @@ const install = (Vue) => {
   Vue.component("Label", Label)
   Vue.component("Badge", Badge)
   Vue.component("Alert", Alert)
+  Vue.component("BreadCrumb", BreadCrumb)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -24,5 +26,6 @@ export default {
   Btns,
   Label,
   Badge,
-  Alert
+  Alert,
+  BreadCrumb
 }

@@ -101,6 +101,10 @@
       <Alert type="danger">
         Danger
       </Alert>
+      <hr>
+
+      <h3>路径导航:</h3>
+      <BreadCrumb></BreadCrumb>
   </div>
 </template>
 
