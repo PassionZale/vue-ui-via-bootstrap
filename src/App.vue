@@ -89,7 +89,7 @@
         closable
         @link-click="alertLinkClick"
         @on-close="alertClose">
-        <template slot="strong">Strong Slot</template> 
+        <template slot="strong">强调文本</template> 
         Success
       </Alert>
       <Alert type="info" closable>
