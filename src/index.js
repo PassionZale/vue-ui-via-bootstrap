@@ -4,6 +4,7 @@ import Label from "./components/label"
 import Badge from "./components/badge"
 import Alert from "./components/alert"
 import BreadCrumb from "./components/breadcrumb"
+import Container from "./components/container"
 
 const install = (Vue) => {
   Vue.component("Icon", Icon)
@@ -14,6 +15,7 @@ const install = (Vue) => {
   Vue.component("Badge", Badge)
   Vue.component("Alert", Alert)
   Vue.component("BreadCrumb", BreadCrumb)
+  Vue.component("Container", Container)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -27,5 +29,6 @@ export default {
   Label,
   Badge,
   Alert,
-  BreadCrumb
+  BreadCrumb,
+  Container
 }

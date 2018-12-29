@@ -5,7 +5,7 @@
     </strong>
     <slot></slot>
     <template v-if="link">
-      <a class="alert-link" href="#" @click.prevent="linkClick">{{ link }}</a>
+      <a class="alert-link" href="javascript:;" @click.prevent="linkClick">{{ link }}</a>
     </template>
     <button @click="closeClick" v-if="closable" type="button" class="close" title="关闭"><span>&times;</span></button>
   </div>
