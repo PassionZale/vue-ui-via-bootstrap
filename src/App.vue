@@ -115,6 +115,9 @@
         <BreadCrumb></BreadCrumb>
         <hr>
 
+        <h3>图片:</h3>
+        <Image src="//tvax1.sinaimg.cn/crop.0.0.1342.1342.180/006OyqbNly8fka2xep3duj311a11ajv9.jpg" alt="壮壮" title="壮壮"></Image>
+
       </Container>
 
   </div>
