@@ -92,7 +92,7 @@
         <template slot="strong">Strong Slot</template> 
         Success
       </Alert>
-      <Alert type="info">
+      <Alert type="info" closable>
         Info
       </Alert>
       <Alert type="warning">
