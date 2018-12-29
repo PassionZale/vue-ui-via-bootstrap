@@ -2,6 +2,7 @@ import Icon from "./components/icon"
 import * as Btns from "./components/button"
 import Label from "./components/label"
 import Badge from "./components/badge"
+import Alert from "./components/alert"
 
 const install = (Vue) => {
   Vue.component("Icon", Icon)
@@ -10,6 +11,7 @@ const install = (Vue) => {
   })
   Vue.component("Label", Label)
   Vue.component("Badge", Badge)
+  Vue.component("Alert", Alert)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -21,5 +23,6 @@ export default {
   Icon,
   Btns,
   Label,
-  Badge
+  Badge,
+  Alert
 }
