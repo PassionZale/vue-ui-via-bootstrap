@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" :alt="alt" :title="title" />
+  <img :class="classes" :src="src" :alt="alt" :title="title" />
 </template>
 
 <script>
@@ -19,7 +19,7 @@ export default {
     shape: {
       type: String,
       validator(val) {
-        return !looseIndexOf(imageTypes, val)
+        return !looseIndexOf(imageShapes, val)
       }
     },
 

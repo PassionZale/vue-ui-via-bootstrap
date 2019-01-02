@@ -116,7 +116,13 @@
         <hr>
 
         <h3>图片:</h3>
-        <b-image src="//tvax1.sinaimg.cn/crop.0.0.1342.1342.180/006OyqbNly8fka2xep3duj311a11ajv9.jpg" alt="壮壮" title="壮壮"></b-image>
+        <b-image
+          response
+          shape="thumb"
+          src="//tvax1.sinaimg.cn/crop.0.0.1342.1342.180/006OyqbNly8fka2xep3duj311a11ajv9.jpg" 
+          alt="壮壮" 
+          title="壮壮">
+        </b-image>
         <hr>
 
       </b-container>
