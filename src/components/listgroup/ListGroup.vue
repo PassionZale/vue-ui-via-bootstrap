@@ -1,12 +1,12 @@
 <template>
-  <ol class="breadcrumb">
+  <ul class="list-group">
     <slot></slot>
-  </ol>
+  </ul>
 </template>
 
 <script>
 export default {
-  name: "BreadCrumb",
+  name: "ListGroup",
 }
 </script>
 
