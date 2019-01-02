@@ -1,3 +1,4 @@
 import BreadCrumb from "./BreadCrumb.vue"
+import BreadCrumbItem from "./BreadCrumbItem.vue"
 
-export default BreadCrumb
+export { BreadCrumb, BreadCrumbItem }

@@ -3,7 +3,7 @@ import * as Btns from "./components/button"
 import Label from "./components/label"
 import Badge from "./components/badge"
 import Alert from "./components/alert"
-import BreadCrumb from "./components/breadcrumb"
+import { BreadCrumb, BreadCrumbItem } from "./components/breadcrumb"
 import Container from "./components/container"
 import Image from "./components/image"
 
@@ -16,6 +16,7 @@ const install = (Vue) => {
   Vue.component("bBadge", Badge)
   Vue.component("bAlert", Alert)
   Vue.component("bBreadCrumb", BreadCrumb)
+  Vue.component("bBreadCrumbItem", BreadCrumbItem)
   Vue.component("bContainer", Container)
   Vue.component("bImage", Image)
 }

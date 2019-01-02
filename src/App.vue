@@ -112,7 +112,17 @@
         <hr>
 
         <h3>路径导航:</h3>
-        <b-bread-crumb></b-bread-crumb>
+        <b-bread-crumb>
+          <b-bread-crumb-item>
+            <a href="javascript:;">Home</a>
+          </b-bread-crumb-item>
+          <b-bread-crumb-item>
+            <a href="javascript:;">Library</a>
+          </b-bread-crumb-item>
+          <b-bread-crumb-item>
+            Data
+          </b-bread-crumb-item>
+        </b-bread-crumb>
         <hr>
 
         <h3>图片:</h3>
