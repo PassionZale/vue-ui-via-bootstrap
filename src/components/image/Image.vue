@@ -8,7 +8,7 @@ import { looseIndexOf } from "../../utils/assist"
 const imageShapes = ["round", "circle", "thumb"]
 
 export default {
-  name: "Image",
+  name: "bImage",
 
   props: {
     src: {

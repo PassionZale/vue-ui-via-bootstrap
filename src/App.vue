@@ -2,96 +2,96 @@
   <div>
 
       <h3>容器:</h3>
-      <Container fluid style="background-color: #f7f7f9; height: 100px; border: 1px solid #e1e1e8;">container-fluid</Container>
+      <b-container fluid style="background-color: #f7f7f9; height: 100px; border: 1px solid #e1e1e8;">container-fluid</b-container>
       <br>
-      <Container style="background-color: #f7f7f9; height: 100px; border: 1px solid #e1e1e8;">container</Container>
+      <b-container style="background-color: #f7f7f9; height: 100px; border: 1px solid #e1e1e8;">container</b-container>
       <hr>
 
-      <Container>
+      <b-container>
         <h3>图标:</h3>
-        <Icon name="plus" size="20"></Icon>
-        <Icon name="star" size="20"></Icon>
+        <b-icon name="plus" size="20"></b-icon>
+        <b-icon name="star" size="20"></b-icon>
         <hr>
 
         <h3>按钮:</h3>
-        <Button>Default</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="success">Success</Button>
-        <Button type="warning">Warning</Button>
-        <Button type="danger">Danger</Button>
-        <Button type="info">Info</Button>
-        <Button type="link">Link</Button>
-        <Button icon="star">ICON</Button>
+       <b-button>Default</b-button>
+        <b-button type="primary">Primary</b-button>
+        <b-button type="success">Success</b-button>
+        <b-button type="warning">Warning</b-button>
+        <b-button type="danger">Danger</b-button>
+        <b-button type="info">Info</b-button>
+        <b-button type="link">Link</b-button>
+        <b-button icon="star">ICON</b-button>
         <br>
         <br>
-        <Button size="xs">xs</Button>
-        <Button size="sm">sm</Button>
-        <Button>default</Button>
-        <Button size="lg">lg</Button>
+        <b-button size="xs">xs</b-button>
+        <b-button size="sm">sm</b-button>
+        <b-button>default</b-button>
+        <b-button size="lg">lg</b-button>
         <br>
         <br>
-        <Button type="primary" disabled>Disabled</Button>
-        <Button type="link" disabled>Disabled</Button>
+        <b-button type="primary" disabled>Disabled</b-button>
+        <b-button type="link" disabled>Disabled</b-button>
         <br>
         <br>
-        <Button type="primary" long>Long</Button>
+        <b-button type="primary" long>Long</b-button>
         <hr>
 
         <h3>按钮组:</h3>
-        <ButtonGroup>
-          <Button>1</Button>
-          <Button>2</Button>
-          <Button>3</Button>
-          <Button>4</Button>
-          <Button>5</Button>
-        </ButtonGroup>
+        <b-button-group>
+          <b-button>1</b-button>
+          <b-button>2</b-button>
+          <b-button>3</b-button>
+          <b-button>4</b-button>
+          <b-button>5</b-button>
+        </b-button-group>
         <hr>
 
         <h3>按钮工具栏:</h3>
-        <ButtonToolBar>
-          <ButtonGroup>
-            <Button>1</Button>
-            <Button>2</Button>
-            <Button>3</Button>
-          </ButtonGroup>
+        <b-buttonToolBar>
+          <b-button-group>
+            <b-button>1</b-button>
+            <b-button>2</b-button>
+            <b-button>3</b-button>
+          </b-button-group>
 
-          <ButtonGroup>
-            <Button>4</Button>
-            <Button>5</Button>
-            <Button>6</Button>
-          </ButtonGroup>
+          <b-button-group>
+            <b-button>4</b-button>
+            <b-button>5</b-button>
+            <b-button>6</b-button>
+          </b-button-group>
 
-          <ButtonGroup>
-            <Button>7</Button>
-            <Button>8</Button>
-            <Button>9</Button>
-          </ButtonGroup>
-        </ButtonToolBar>
+          <b-button-group>
+            <b-button>7</b-button>
+            <b-button>8</b-button>
+            <b-button>9</b-button>
+          </b-button-group>
+        </b-buttonToolBar>
         <hr>
 
         <h3>标签:</h3>
-        <Label>Default</Label>
-        <Label type="primary">Primary</Label>
-        <Label type="success">Success</Label>
-        <Label type="info">Info</Label>
-        <Label type="warning">Warning</Label>
-        <Label type="danger">Danger</Label>
+        <b-label>Default</b-label>
+        <b-label type="primary">Primary</b-label>
+        <b-label type="success">Success</b-label>
+        <b-label type="info">Info</b-label>
+        <b-label type="warning">Warning</b-label>
+        <b-label type="danger">Danger</b-label>
         <hr>
 
         <h3>徽章:</h3>
-        <Badge></Badge>
+        <b-badge></b-badge>
         <a href="#">
           Inbox
-          <Badge>2</Badge>
+          <b-badge>2</b-badge>
         </a>
-        <Button type="primary">
+        <b-button type="primary">
           Messages
-          <Badge>3</Badge>
-        </Button>
+          <b-badge>3</b-badge>
+        </b-button>
         <hr>
 
         <h3>警告框:</h3>
-        <Alert 
+        <b-alert 
           type="success" 
           link="链接文本" 
           closable
@@ -99,26 +99,27 @@
           @on-close="alertClose">
           <template slot="strong">强调文本</template> 
           Success
-        </Alert>
-        <Alert type="info" closable>
+        </b-alert>
+        <b-alert type="info" closable>
           Info
-        </Alert>
-        <Alert type="warning">
+        </b-alert>
+        <b-alert type="warning">
           Warning
-        </Alert>
-        <Alert type="danger">
+        </b-alert>
+        <b-alert type="danger">
           Danger
-        </Alert>
+        </b-alert>
         <hr>
 
         <h3>路径导航:</h3>
-        <BreadCrumb></BreadCrumb>
+        <b-bread-crumb></b-bread-crumb>
         <hr>
 
         <h3>图片:</h3>
-        <Image src="//tvax1.sinaimg.cn/crop.0.0.1342.1342.180/006OyqbNly8fka2xep3duj311a11ajv9.jpg" alt="壮壮" title="壮壮"></Image>
+        <b-image src="//tvax1.sinaimg.cn/crop.0.0.1342.1342.180/006OyqbNly8fka2xep3duj311a11ajv9.jpg" alt="壮壮" title="壮壮"></b-image>
+        <hr>
 
-      </Container>
+      </b-container>
 
   </div>
 </template>
@@ -129,10 +130,10 @@ export default {
 
   methods: {
     alertLinkClick() {
-      alert("alert-link-click")
+      alert("b-alert-link-click")
     },
     alertClose() {
-      alert("alertClose")
+      alert("b-alertClose")
     }
   }
 }

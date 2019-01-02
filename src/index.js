@@ -8,16 +8,16 @@ import Container from "./components/container"
 import Image from "./components/image"
 
 const install = (Vue) => {
-  Vue.component("Icon", Icon)
+  Vue.component("bIcon", Icon)
   Object.keys(Btns).forEach(key => {
-    Vue.component(key, Btns[key])    
+    Vue.component(`b${key}`, Btns[key])    
   })
-  Vue.component("Label", Label)
-  Vue.component("Badge", Badge)
-  Vue.component("Alert", Alert)
-  Vue.component("BreadCrumb", BreadCrumb)
-  Vue.component("Container", Container)
-  Vue.component("Image", Image)
+  Vue.component("bLabel", Label)
+  Vue.component("bBadge", Badge)
+  Vue.component("bAlert", Alert)
+  Vue.component("bBreadCrumb", BreadCrumb)
+  Vue.component("bContainer", Container)
+  Vue.component("bImage", Image)
 }
 
 if(typeof window != "undefined" && window.Vue) {
