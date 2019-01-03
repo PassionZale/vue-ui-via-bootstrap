@@ -42,6 +42,7 @@ export default {
 
   render(h) {
     const vNodes = this.$slots.default === undefined ? [] : this.$slots.default
+
     const header = h(
       "h4",
       {
@@ -61,7 +62,12 @@ export default {
     )
 
     const tag = this.tag
-    const attrs = tag === "a" ? { href: "javascript:;" } : { type: "button" }
+
+    let attrs = {}
+
+    tag === "a"  && (attrs = { href: "javascript:;" })
+    tag === "button" && (attrs = { type: "button" })
+
     return h(
       tag,
       {
