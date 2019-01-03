@@ -150,6 +150,18 @@
           <b-list-group-item @click="click('clicked')">click listener</b-list-group-item>
         </b-list-group>
 
+        <b-list-group>
+          <b-list-group-item active>
+            <template slot="header">
+              item header
+            </template>
+            <template slot="content">
+              item text
+            </template>
+            default
+          </b-list-group-item>
+        </b-list-group>
+
         <hr>
 
       </b-container>

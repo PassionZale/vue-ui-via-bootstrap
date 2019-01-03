@@ -42,6 +42,24 @@ export default {
 
   render(h) {
     const vNodes = this.$slots.default === undefined ? [] : this.$slots.default
+    const heading = h(
+      "h4",
+      {
+        class: "list-group-item-heading",
+        slot: "header"
+      },
+      this.$slots.header
+    )
+
+    const text = h(
+      "p",
+      {
+        class: "list-group-item-text",
+        slot: "content"
+      },
+      this.$slots.content
+    )
+
     const tag = this.tag
     const attrs = tag === "a" ? { href: "javascript:;" } : {}
     return h(
@@ -53,9 +71,9 @@ export default {
           click: (e) => {
             this.$emit("click", e)
           }
-        }
+        },
       },
-      vNodes
+      [heading, text, vNodes]
     )
   }
 };
