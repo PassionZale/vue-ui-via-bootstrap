@@ -7,6 +7,7 @@ import { BreadCrumb, BreadCrumbItem } from "./components/breadcrumb"
 import Container from "./components/container"
 import Image from "./components/image"
 import * as Groups from "./components/listgroup"
+import Panel from "./components/panel"
 
 const install = (Vue) => {
   Vue.component("bIcon", Icon)
@@ -23,6 +24,7 @@ const install = (Vue) => {
   Object.keys(Groups).forEach(key => {
     Vue.component(`b${key}`, Groups[key])    
   })
+  Vue.component("bPanel", Panel)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -40,4 +42,5 @@ export default {
   Container,
   Image,
   Groups,
+  Panel,
 }
