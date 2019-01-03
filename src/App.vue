@@ -153,15 +153,29 @@
         <b-list-group>
           <b-list-group-item active>
             <template slot="header">
-              item header
+              List group item heading
             </template>
             <template slot="content">
-              item text
+              Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
             </template>
-            default
+          </b-list-group-item>
+          <b-list-group-item>
+            <template slot="header">
+              List group item heading
+            </template>
+            <template slot="content">
+              Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+            </template>
+          </b-list-group-item>
+          <b-list-group-item>
+            <template slot="header">
+              List group item heading
+            </template>
+            <template slot="content">
+              Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+            </template>
           </b-list-group-item>
         </b-list-group>
-
         <hr>
 
       </b-container>
