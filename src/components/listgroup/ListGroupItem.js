@@ -42,7 +42,7 @@ export default {
 
   render(h) {
     const vNodes = this.$slots.default === undefined ? [] : this.$slots.default
-    const heading = h(
+    const header = h(
       "h4",
       {
         class: "list-group-item-heading",
@@ -51,7 +51,7 @@ export default {
       this.$slots.header
     )
 
-    const text = h(
+    const content = h(
       "p",
       {
         class: "list-group-item-text",
@@ -73,7 +73,7 @@ export default {
           }
         },
       },
-      [heading, text, vNodes]
+      [header, content, vNodes]
     )
   }
 };
