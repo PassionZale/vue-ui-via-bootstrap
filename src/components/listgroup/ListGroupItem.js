@@ -61,7 +61,7 @@ export default {
     )
 
     const tag = this.tag
-    const attrs = tag === "a" ? { href: "javascript:;" } : {}
+    const attrs = tag === "a" ? { href: "javascript:;" } : { type: "button" }
     return h(
       tag,
       {
