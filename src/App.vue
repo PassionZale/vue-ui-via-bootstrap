@@ -95,8 +95,8 @@
           type="success" 
           link="链接文本" 
           closable
-          @link-click="alertLinkClick"
-          @on-close="alertClose">
+          @link-click="click('clicked')"
+          @on-close="click('closed')">
           <template slot="strong">强调文本</template> 
           Success
         </b-alert>
@@ -136,6 +136,21 @@
         <hr>
 
         <h3>列表组:</h3>
+        <b-list-group>
+          <b-list-group-item>Type: default</b-list-group-item>
+          <b-list-group-item type="success">Type: success</b-list-group-item>
+          <b-list-group-item type="danger">Type: Success</b-list-group-item>
+          <b-list-group-item tag="a" type="info">Tag: a & Type: info</b-list-group-item>
+          <b-list-group-item tag="button" type="warning">Tag: button & Type: warning</b-list-group-item>
+        </b-list-group>
+
+        <b-list-group>
+          <b-list-group-item active>active</b-list-group-item>
+          <b-list-group-item disabled>disabled</b-list-group-item>
+          <b-list-group-item @click="click('clicked')">click listener</b-list-group-item>
+        </b-list-group>
+
+        <hr>
 
       </b-container>
 
@@ -147,11 +162,8 @@ export default {
   name: "App",
 
   methods: {
-    alertLinkClick() {
-      alert("b-alert-link-click")
-    },
-    alertClose() {
-      alert("b-alertClose")
+    click(msg) {
+      alert(msg)
     }
   }
 }

@@ -6,6 +6,7 @@ import Alert from "./components/alert"
 import { BreadCrumb, BreadCrumbItem } from "./components/breadcrumb"
 import Container from "./components/container"
 import Image from "./components/image"
+import * as Groups from "./components/listgroup"
 
 const install = (Vue) => {
   Vue.component("bIcon", Icon)
@@ -19,6 +20,9 @@ const install = (Vue) => {
   Vue.component("bBreadCrumbItem", BreadCrumbItem)
   Vue.component("bContainer", Container)
   Vue.component("bImage", Image)
+  Object.keys(Groups).forEach(key => {
+    Vue.component(`b${key}`, Groups[key])    
+  })
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -34,5 +38,6 @@ export default {
   Alert,
   BreadCrumb,
   Container,
-  Image
+  Image,
+  Groups,
 }
