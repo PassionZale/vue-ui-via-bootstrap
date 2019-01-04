@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/PassionZale/vue-ui-via-bootstrap#readme",
   "dependencies": {
-    "vue": "^2.5.21"
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2"
   },
   "browserslist": [
     "> 1%",

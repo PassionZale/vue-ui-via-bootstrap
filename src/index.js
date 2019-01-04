@@ -9,6 +9,7 @@ import Image from "./components/image"
 import * as Groups from "./components/listgroup"
 import Panel from "./components/panel"
 import Page from "./components/page"
+import {Col, Row} from "./components/grid"
 
 const install = (Vue) => {
   Vue.component("bIcon", Icon)
@@ -27,6 +28,8 @@ const install = (Vue) => {
   })
   Vue.component("bPanel", Panel)
   Vue.component("bPage", Page)
+  Vue.component("bCol", Col),
+  Vue.component("bRow", Row)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -45,5 +48,7 @@ export default {
   Image,
   Groups,
   Panel,
-  Page
+  Page,
+  Col,
+  Row
 }

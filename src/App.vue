@@ -1,7 +1,32 @@
+<style>
+.col-example {
+  background-color: rgba(86,61,124,.15);
+  text-align: center;
+  border: 1px solid rgba(86,61,124,.2)
+}
+</style>
+
 <template>
   <div>
 
       <b-container>
+        <h3>布局:</h3>
+        <b-row>
+          <b-col class="col-example" :md="4">col-md-4</b-col>
+          <b-col class="col-example" :md="4">col-md-4</b-col>
+          <b-col class="col-example" :md="4">col-md-4</b-col>
+        </b-row>
+        <br>
+        <b-row>
+          <b-col class="col-example" :md="{span: 8}">col-md-8</b-col>
+          <b-col class="col-example" :md="4">col-md-4</b-col>
+        </b-row>
+        <br>
+        <b-row>
+          <b-col class="col-example" :md="4">col-md-4</b-col>
+          <b-col class="col-example" :md="{span: 4, offset: 4}">col-md-4 col-md-offset-4</b-col>
+        </b-row>
+        <hr>
 
         <h3>分页:</h3>
         <b-page :total-count="102" :current="1" size="lg"></b-page>
