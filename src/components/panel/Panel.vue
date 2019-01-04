@@ -1,7 +1,11 @@
 <template>
   <div :class="classes">
-    <div class="panel-headding">
-      <slot name="header"></slot>
+    <div class="panel-heading">
+      <div class="panel-title">
+        <slot name="title"></slot>
+      </div>
+      <slot name="header">
+      </slot>
     </div>
     <div class="panel-body">
       <slot name="body"></slot>

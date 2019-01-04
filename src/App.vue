@@ -178,6 +178,33 @@
         </b-list-group>
         <hr>
 
+        <h3>面板:</h3>
+        <b-panel type="primary">
+          <template slot="header">Panel heading without title</template>
+          <template slot="body">
+            ListGroup In Panel Body:
+            <b-list-group>
+              <b-list-group-item>2</b-list-group-item>
+              <b-list-group-item>3</b-list-group-item>
+              <b-list-group-item>4</b-list-group-item>
+            </b-list-group>
+          </template>
+          ListGroup Out Panel Body:
+          <b-list-group>
+            <b-list-group-item>2</b-list-group-item>
+            <b-list-group-item>3</b-list-group-item>
+            <b-list-group-item>4</b-list-group-item>
+          </b-list-group>
+          <template slot="footer">Panel Footer</template>
+        </b-panel>
+
+        <b-panel type="info">
+          <template slot="title">Panel Title</template>
+          <template slot="body">Panel Body</template>
+          <template slot="footer">Panel Footer</template>
+        </b-panel>
+
+        <hr>
       </b-container>
 
   </div>
