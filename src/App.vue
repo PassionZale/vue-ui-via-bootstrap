@@ -1,13 +1,14 @@
 <template>
   <div>
 
-      <h3>容器:</h3>
-      <b-container fluid style="background-color: #f7f7f9; height: 100px; border: 1px solid #e1e1e8;">container-fluid</b-container>
-      <br>
-      <b-container style="background-color: #f7f7f9; height: 100px; border: 1px solid #e1e1e8;">container</b-container>
-      <hr>
-
       <b-container>
+
+        <h3>分页:</h3>
+        <b-page :total-count="102" :current="1" size="lg"></b-page>
+        <b-page :total-count="86" :current.sync="current" @page-change="pageChange"></b-page>
+        <b-page :total-count="102" :current="1" size="sm"></b-page>
+        <hr>
+
         <h3>图标:</h3>
         <b-icon name="plus" size="20"></b-icon>
         <b-icon name="star" size="20"></b-icon>
@@ -127,8 +128,19 @@
 
         <h3>图片:</h3>
         <b-image
-          response
           shape="thumb"
+          src="//tvax1.sinaimg.cn/crop.0.0.1342.1342.180/006OyqbNly8fka2xep3duj311a11ajv9.jpg" 
+          alt="壮壮" 
+          title="壮壮">
+        </b-image>
+        <b-image
+          shape="circle"
+          src="//tvax1.sinaimg.cn/crop.0.0.1342.1342.180/006OyqbNly8fka2xep3duj311a11ajv9.jpg" 
+          alt="壮壮" 
+          title="壮壮">
+        </b-image>
+        <b-image
+          shape="round"
           src="//tvax1.sinaimg.cn/crop.0.0.1342.1342.180/006OyqbNly8fka2xep3duj311a11ajv9.jpg" 
           alt="壮壮" 
           title="壮壮">
@@ -203,7 +215,6 @@
           <template slot="body">Panel Body</template>
           <template slot="footer">Panel Footer</template>
         </b-panel>
-
         <hr>
       </b-container>
 
@@ -214,9 +225,19 @@
 export default {
   name: "App",
 
+  data() {
+    return {
+      current: 3
+    }
+  },
+
   methods: {
     click(msg) {
       alert(msg)
+    },
+
+    pageChange(page) {
+      console.log(page)
     }
   }
 }

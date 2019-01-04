@@ -8,6 +8,7 @@ import Container from "./components/container"
 import Image from "./components/image"
 import * as Groups from "./components/listgroup"
 import Panel from "./components/panel"
+import Page from "./components/page"
 
 const install = (Vue) => {
   Vue.component("bIcon", Icon)
@@ -25,6 +26,7 @@ const install = (Vue) => {
     Vue.component(`b${key}`, Groups[key])    
   })
   Vue.component("bPanel", Panel)
+  Vue.component("bPage", Page)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -43,4 +45,5 @@ export default {
   Image,
   Groups,
   Panel,
+  Page
 }
