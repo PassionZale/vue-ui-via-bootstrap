@@ -10,6 +10,13 @@
   <div>
 
       <b-container>
+        <h3>标签页:</h3>
+        <b-tab>
+          <b-tab-item>111</b-tab-item>
+          <b-tab-item>222</b-tab-item>
+          <b-tab-item>333</b-tab-item>
+        </b-tab>
+
         <h3>布局:</h3>
         <b-row>
           <b-col class="col-example" :md="4">col-md-4</b-col>

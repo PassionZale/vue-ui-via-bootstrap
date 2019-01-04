@@ -10,6 +10,7 @@ import * as Groups from "./components/listgroup"
 import Panel from "./components/panel"
 import Page from "./components/page"
 import {Col, Row} from "./components/grid"
+import {Tab, TabItem} from "./components/tab"
 
 const install = (Vue) => {
   Vue.component("bIcon", Icon)
@@ -28,8 +29,10 @@ const install = (Vue) => {
   })
   Vue.component("bPanel", Panel)
   Vue.component("bPage", Page)
-  Vue.component("bCol", Col),
+  Vue.component("bCol", Col)
   Vue.component("bRow", Row)
+  Vue.component("bTab", Tab)
+  Vue.component("bTabItem", TabItem)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -50,5 +53,7 @@ export default {
   Panel,
   Page,
   Col,
-  Row
+  Row,
+  Tab,
+  TabItem
 }
