@@ -1,5 +1,7 @@
 import { hasOwn, toRawType } from "../../utils/assist"
 
+// 校验对象中的 key 是否含有 span
+// 因为 span 是必选项
 const propObjValidator = obj => {
   if(toRawType(obj) === "Object") {
     if(!hasOwn(obj, "span")) {
@@ -9,6 +11,11 @@ const propObjValidator = obj => {
   return true
 }
 
+// 将参数序列化为 {span, offset} 的 Object
+// <b-col :md="4"></b-col>                              md: { span: 4, offset: null }
+// <b-col :md="{span: 4, offset: 0}"></b-col>           md: { span: 4, offset: null }
+// <b-col :md="{span: 4, offset: 3}"></b-col>           md: { span: 4, offset: 3 }
+// <b-col :md="{span: 4, offset: 3, a: 1}"></b-col>     md: { span: 4, offset: 3 }
 const formatCls = param => {
   let classes = {span: null, offset: null}
   if(toRawType(param) === "Number") {
