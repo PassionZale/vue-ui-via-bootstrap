@@ -17,22 +17,21 @@
 
           <template slot="list">
             <b-drop-down-item>
+              <template slot="header">Dropdown Header</template>
               Action1
             </b-drop-down-item>
 
             <b-drop-down-item>
-              <template slot="header">Dropdown Header</template>
               Action2
-            </b-drop-down-item>
-
-            <b-drop-down-item divider>
-              Action3
             </b-drop-down-item>
 
             <b-drop-down-item disabled>
               Action4
             </b-drop-down-item>
 
+            <b-drop-down-item divider>
+              Action3
+            </b-drop-down-item>
           </template>
         </b-drop-down> 
 

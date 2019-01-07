@@ -1,7 +1,7 @@
 <template>
   <div :class="clsDropDown" v-clickOutSide="clickOutSide" @click="menuShow = !menuShow">
 
-    <Button>
+    <Button :type="type" :size="size">
       <slot></slot>
       <span class="caret"></span>
     </Button>
@@ -20,6 +20,8 @@ import clickOutSide from "../../directives/clickOutSide"
 
 const positions = ["bottom", "top"]
 const aligns = ["left", "right"]
+const types = ["default", "primary", "success", "info", "warning", "danger"]
+const sizes = ["xs", "sm", "lg"]
 
 export default {
   name: "DropDown",
@@ -29,6 +31,21 @@ export default {
   directives: { clickOutSide },
 
   props: {
+    type: {
+      type: String,
+      default: "default",
+      validator(val) {
+        return !looseIndexOf(types, val)
+      }
+    },
+
+    size: {
+      type: String,
+      validator(val) {
+        return !looseIndexOf(sizes, val)
+      }
+    },
+
     position: {
       type: String,
       default: "bottom",
