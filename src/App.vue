@@ -11,10 +11,16 @@
 
       <b-container>
         <h3>标签页:</h3>
-        <b-tab>
-          <b-tab-item>111</b-tab-item>
-          <b-tab-item>222</b-tab-item>
-          <b-tab-item>333</b-tab-item>
+        <b-tab value="tab1">
+          <b-tab-item name="tab1">
+            Tab 1 Slot 
+          </b-tab-item>
+          <b-tab-item name="tab2">
+            Tab 2 Slot
+          </b-tab-item>
+          <b-tab-item name="tab3">
+            Tab 3 Slot
+          </b-tab-item>
         </b-tab>
 
         <h3>布局:</h3>

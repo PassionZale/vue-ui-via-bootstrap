@@ -1,10 +1,12 @@
 <template>
-  <!-- https://codepen.io/tatimblin/pen/oWKdjR -->
   <div>
-    <ul class="nav nav-tabs">
-      <li role="presentation" class="active"><a href="#">Home</a></li>
-      <li role="presentation"><a href="#">Profile</a></li>
-      <li role="presentation"><a href="#">Messages</a></li>
+    <ul :class="classes">
+      <li 
+        v-for="(item, index) in tabItems" 
+        :class="{'active': selected === item.name}"
+        @click="changeTabItem(item, index)">
+        <a href="javascript:;">{{ item.name }}</a>
+      </li>
     </ul>
     <div class="tab-content">
       <slot></slot>
@@ -13,11 +15,18 @@
 </template>
 
 <script>
+import { findComponentsDownward } from "../../utils/assist"
+
 export default {
   name: "Tab",
 
   props: {
-    pills: Boolean
+    pills: Boolean,
+    
+    value: {
+      type: String,
+      required: true
+    }
   },
 
   computed: {
@@ -32,15 +41,34 @@ export default {
     }
   },
 
+  watch: {
+    selected(val) {
+      this.tabItems.forEach(tab => {
+        tab.active = (tab.name === this.selected)
+      })    
+    }
+  },
+
   data() {
     return {
-      items: []
+      tabItems: [],
+      selected: ""
     }
   },
 
   created() {
-    console.log(this.$children)
-    this.items = this.$children.filter(item => item.name === "TabItem")
+    this.selected = this.value      
+  },
+
+  mounted() {
+    this.tabItems = findComponentsDownward(this, "TabItem")
+  },
+
+  methods: {
+    changeTabItem(tabItem, index) {
+      this.selected = tabItem.name
+      this.$emit("on-change", tabItem.name, index)
+    }
   }
 }
 </script>

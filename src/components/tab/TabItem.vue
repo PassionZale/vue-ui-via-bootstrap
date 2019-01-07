@@ -1,5 +1,5 @@
 <template>
-  <div class="tab-pane">
+  <div :class="classes">
     <slot></slot>
   </div>
 </template>
@@ -8,9 +8,27 @@
 export default {
   name: "TabItem",
 
+  props: {
+    name: {
+      type: String,
+      required: true
+    }
+  },
+
   data() {
     return {
-      isActive: false
+      active: false
+    }
+  },
+
+  computed: {
+    classes() {
+      return [
+        "tab-pane",
+        {
+          "active": this.active
+        }
+      ]
     }
   }
 }
