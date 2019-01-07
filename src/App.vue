@@ -10,6 +10,34 @@
   <div>
 
       <b-container>
+
+        <h3>下拉菜单:</h3>
+        <b-drop-down>
+          下拉菜单
+
+          <template slot="list">
+            <b-drop-down-item>
+              Action1
+            </b-drop-down-item>
+
+            <b-drop-down-item>
+              <template slot="header">Dropdown Header</template>
+              Action2
+            </b-drop-down-item>
+
+            <b-drop-down-item divider>
+              Action3
+            </b-drop-down-item>
+
+            <b-drop-down-item disabled>
+              Action4
+            </b-drop-down-item>
+
+          </template>
+        </b-drop-down> 
+
+        <hr>
+
         <h3>标签页:</h3>
         <b-tab value="tab1">
           <b-tab-item name="tab1">

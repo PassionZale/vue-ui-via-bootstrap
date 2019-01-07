@@ -11,6 +11,7 @@ import Panel from "./components/panel"
 import Page from "./components/page"
 import {Col, Row} from "./components/grid"
 import {Tab, TabItem} from "./components/tab"
+import { DropDown, DropDownItem } from "./components/dropdown"
 
 const install = (Vue) => {
   Vue.component("bIcon", Icon)
@@ -33,6 +34,8 @@ const install = (Vue) => {
   Vue.component("bRow", Row)
   Vue.component("bTab", Tab)
   Vue.component("bTabItem", TabItem)
+  Vue.component("bDropDown", DropDown)
+  Vue.component("bDropDownItem", DropDownItem)
 }
 
 if(typeof window != "undefined" && window.Vue) {
@@ -55,5 +58,7 @@ export default {
   Col,
   Row,
   Tab,
-  TabItem
+  TabItem,
+  DropDown,
+  DropDownItem,
 }
