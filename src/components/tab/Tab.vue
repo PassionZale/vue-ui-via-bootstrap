@@ -3,7 +3,7 @@
     <ul :class="classes">
       <li 
         v-for="(item, index) in tabItems" 
-        :class="{'active': selected === item.name}"
+        :class="{'active': selected === item.name, 'disabled': item.disabled}"
         @click="changeTabItem(item, index)">
         <a href="javascript:;">{{ item.name }}</a>
       </li>
@@ -66,8 +66,10 @@ export default {
 
   methods: {
     changeTabItem(tabItem, index) {
-      this.selected = tabItem.name
-      this.$emit("on-change", tabItem.name, index)
+      if(!tabItem.disabled) {
+        this.selected = tabItem.name
+        this.$emit("on-change", tabItem.name, index)
+      }
     }
   }
 }

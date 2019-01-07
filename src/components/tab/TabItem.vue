@@ -12,7 +12,9 @@ export default {
     name: {
       type: String,
       required: true
-    }
+    },
+
+    disabled: Boolean
   },
 
   data() {
@@ -26,7 +28,7 @@ export default {
       return [
         "tab-pane",
         {
-          "active": this.active
+          "active": this.active,
         }
       ]
     }

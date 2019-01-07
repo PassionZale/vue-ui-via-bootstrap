@@ -21,7 +21,11 @@
           <b-tab-item name="tab3">
             Tab 3 Slot
           </b-tab-item>
+          <b-tab-item name="tab4" disabled>
+            Tab 4 Disabled
+          </b-tab-item>
         </b-tab>
+        <hr>
 
         <h3>布局:</h3>
         <b-row>
